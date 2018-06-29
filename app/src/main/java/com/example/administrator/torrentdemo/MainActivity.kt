@@ -2,9 +2,8 @@ package com.example.administrator.torrentdemo
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
@@ -104,6 +103,7 @@ class MainActivity : AppCompatActivity() {
                     mPlayUrl = mTaskHelper.getLocalUrl(SAVE_PATH.plus(torrentInfo.mSubFileInfo[0].mFileName))
                 })
     }
+
 
     private fun convertFileSize(size: Long): String {
         val kb: Long = 1024
